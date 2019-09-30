@@ -11,7 +11,7 @@ Before using on pages make sure that the page has loaded after enabling the plug
 Places to change JSON Data link:
  - content.js line 12 
  - popup.js line 7
- - Or find and replace this text https://gist.githubusercontent.com/Chrystophs/9f5adf56cdeae52563294b0610547482/raw/f7f5f586f12c8586bd953c2ae015b12b775222e4/default-test.json
+ - Or find and replace this text https://raw.githubusercontent.com/Chrystophs/cjExtension/master/data.json
 
 
 DATA JSON

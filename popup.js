@@ -4,7 +4,7 @@ $(function() {
 var contentVersion;
 
 // Change to your own repository of data.
-var d = "https://gist.githubusercontent.com/Chrystophs/9f5adf56cdeae52563294b0610547482/raw/f7f5f586f12c8586bd953c2ae015b12b775222e4/default-test.json"
+var d = "https://raw.githubusercontent.com/Chrystophs/cjExtension/master/data.json"
 
 var popup = {
     "Init": function() {
