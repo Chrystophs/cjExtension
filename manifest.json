@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "cjExtension",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches" : [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js" : ["jquery-3.4.1.min.js", "background.js"],
+            "css": ["cjBootstrap.min.css", "styles.css"]
+        },
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://*.atlassian.net/*"
+            ],
+            "js" : ["jquery-3.4.1.min.js","content.js"]
+        }
+
+    ],
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": "icons/logo.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16x16.png",
+        "48": "icons/icon48x48.png",
+        "128": "icons/icon128x128.png" 
+    }
+}

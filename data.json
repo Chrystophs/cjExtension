@@ -1,0 +1,58 @@
+{
+    "data": {
+        "version" : [
+            "0.1"
+        ],
+        "quickText": [
+            {
+                "id": 1,
+                "title" : "Lable Here",
+                "getdate" : true,
+                "summary" : "Summary to copy with Date. {date}",
+                "content" : "Content to be copied"
+            } 
+        ],
+        "cjToolbar": {
+            "greetings": [
+                "Good Morning",
+                "Hello",
+                "Greetings",
+                "Good Afternoon"
+            ],
+            "responses": [
+                {
+                    "name": "Quick Reply",
+                    "message": "This has been completed."
+                },
+                {
+                    "name": "Exmple of Variables",
+                    "message": "You can also assign variables (4th is here {4}) in your message like this {1}, {2} and {3}",
+                    "requests": ["First", "Second", "Third", "Fourth"]
+                },
+                {
+                    "name": "Example Line Breaks",
+                    "message": "You can also assign variables (4th is here {4}) in your message\n\nlike this {1}, {2} and {3}",
+                    "requests": ["First", "Second", "Third", "Fourth"]
+                }
+            ],
+            "closings": [
+                {
+                    "name": "Thank you!", 
+                    "message": "Thank you!"
+                },
+                {
+                    "name":"Great Day",
+                    "message":"Wishing you a great day!"
+                },
+                {
+                    "name":"Serious Matter",
+                    "message":"Thank you for your assistance in this serious matter."
+                }
+            ],
+            "ignoreNames": [
+                "John Smith",
+                "Example"
+            ]
+        }
+    }
+}

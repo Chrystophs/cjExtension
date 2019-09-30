@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chris Extension</title>
+        <!-- Product of Chrystophs -->
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="./cjBootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <!-- Scripts -->
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script src="./jquery-ui.min.js"></script>
+        <script src="./popup.js"></script>
+    </head>
+    <body id="cjExtension" class="popup">
+        <main>
+            <div id="content-version"></div>
+            <div id="cj-quick-text" class="left" aria-labelledby="quick-text-btn" aria-hidden="true" aria-expanded="false"></div>
+            <div id="cj-control-panel" class="form-group right mb-1">
+                <form>
+                    <div class="to-ticket-wrapper input-group mb-2">
+                        <input id="ticket-number" type="text" class="form-control" placeholder="Issue Number..."/>
+                        <button id="to-ticket" type="submit" class="btn btn-success">Go!</button>
+                        <button id="to-ticket-new" class="btn btn-secondary">New Tab</button>
+                    </div>
+                </form>
+                <div class="cj-buttons form-group mb-2">
+                    <button id="quick-1" class="btn btn-info quick">
+                        Quick 1
+                    </button>
+                    <button id="quick-2" class="btn btn-warning quick">
+                        Quick 2
+                    </button>
+                    <button id="quick-3" class="btn btn-dark quick">
+                        Quick 3
+                    </button>
+                    <button id="quick-text-btn" class="btn btn-dark" aria-controls="cj-quick-text">
+                        Quick Text
+                    </button>
+                </div>
+            <div id="cj-output"></div>
+            </div>
+        </main>
+        <footer>
+            <small><i>Created by Christopher Schultz</i></small>
+        </footer>
+    </body>
+</html>

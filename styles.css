@@ -1,0 +1,153 @@
+.hidden {
+    display: none;
+}
+.btn {
+    position: relative;
+}
+body#cjExtension {
+    background: #eee;
+}
+#cs-toolbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 10;
+}
+#content-version {
+    display: block;
+    position: absolute;
+    color: #000;
+    top: 5px;
+    right: 25px;
+    text-align: right;
+}
+#canned-responses {
+    width: 100%;
+}
+.next-gen #canned-responses .input-group-prepend {
+    display: none;
+}
+#req-form {
+    margin-top: 10px;
+}
+#cjExtension.popup main {
+    display: grid;
+    padding: 20px 20px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text controls"
+}
+#cjExtension.popup .right {
+    min-width: 250px;
+    grid-area: controls;
+}
+#cjExtension.popup .right .to-ticket-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#cjExtension.popup .right #ticket-number {
+    box-sizing: border-box;
+    width: 100%;
+    grid-column: span 2;
+    border-radius: 4px 4px 0 0;
+}
+#cjExtension.popup .right #to-ticket {
+    border-radius: 0 0 4px 0;
+}
+#cjExtension.popup .right #to-ticket-new {
+    border-radius: 0 0 0 4px;
+}
+#cjExtension.popup .cj-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#cjExtension.popup .cj-buttons button.btn {
+    border-radius: 0;
+}
+#cjExtension.popup .cj-buttons button.btn:first-child {
+    border-radius: 4px 0 0 0;
+}
+#cjExtension.popup .cj-buttons button.btn:nth-child(2) {
+    border-radius: 0 4px 0 0;
+}
+#cjExtension.popup .cj-buttons button.btn:nth-child(3) {
+    border-radius: 0 0 0 4px;
+}
+#cjExtension.popup .cj-buttons button.btn:last-child {
+    border-radius: 0 0 4px 0;
+}
+#cjExtension.popup .cj-buttons #quick-text-btn {
+    column-span: 2;
+    width: 100%;
+}
+#cjExtension.popup .left {
+    grid-area: text;
+    padding-right: 20px;
+}
+#cjExtension.popup .left .cj-options {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5px;
+}
+#cjExtension.popup #cj-quick-text {
+    display: none;
+}
+#cjExtension.popup #cj-quick-text.open {
+    display: flex;
+    align-items: flex-start;
+}
+#cjExtension.popup .cj-center.btn {
+    border-radius: 0;
+}
+#cjExtension.popup #cj-quick-text.open .qt-copy:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Copied";
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    color: #FFF;
+    background: #28a745;
+    box-sizing: border-box;
+    padding: 4px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+#cjExtension.popup #cj-quick-text.open .qt-copy.copied:after {
+    opacity: 1;
+}
+#cjExtension.popup footer {
+    padding: 0 20px 5px;
+    text-align: right;
+}
+#cjExtension #cj-toolbox {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#cjExtension .img-wrapper {
+    margin: auto;
+}
+#cjExtension .img-wrapper:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+#cjExtension #cj-toolbox #rotate-right {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
